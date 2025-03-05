@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Meta</title>
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Section 2 - Latar belakang wallpaper untuk carousel dengan gradasi hitam */
+        .carousel-section {
+            width: 100vw; /* Lebar penuh */
+            height: 100vh; /* Lebih panjang ke bawah (full layar) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+            /* Tambahkan gradasi hitam sebelum gambar */
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4)), 
+                        url('../img/marina.jpeg') no-repeat center/cover;
+        }
+
+        /* Carousel lebih kecil */
+        .swiper-container {
+            width: 60%; /* Diperkecil */
+            max-width: 800px; /* Batas maksimal lebih kecil */
+            height: 300px; /* Tinggi dikurangi */
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.2); /* Sedikit transparan agar menyatu */
+            padding: 15px; /* Padding dikurangi */
+            box-shadow: 0px 4px 10px rgba(192, 117, 117, 0.2);
+        }
+
+        /* Pastikan gambar dalam slide tetap rapi */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Pastikan gambar tetap proporsional */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <a href="#">
+            <img src="img/marmet.png" alt="Market Meta Logo" class="navbar-logo" height="50">
+        </a>
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#katalog">Catalog</a>
+            <a href="#kontak">Contact</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1 class="gradient-text">Market Meta</h1>
+            <h2 class="gradient-text">Step into the future! Buy and sell exclusive Metaverse assets with just a few clicks.</h2>
+            <br>
+            <a href="#" class="cta"><h4>Get Started !</h4></a>
+        </main>
+    </section>
+    <!-- SVG Gelombang dengan lebih banyak lengkungan -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(239, 237, 255)" fill-opacity="1" d="M0,160 C180,280 360,40 540,160 C720,280 900,40 1080,160 C1260,280 1440,40 1440,320 L0,320 Z"></path>
+    </svg>
+    
+        <!-- About Section Start -->
+<section id="about" class="about">
+    <div class="row">
+        <div class="about-img">
+            <h2>⭐ How to Use Market Meta ⭐</h2>
+            <b>Your Guide to Finding Items and Sellers in the Metaverse</b>
+
+            <!-- Container untuk teks kiri, carousel, dan teks kanan -->
+            <div class="carousel-container">
+                <!-- Teks di sebelah kiri -->
+                <div class="carousel-text left-text">
+                </div>
+
+                <!-- Wrapper untuk carousel -->
+                <div class="carousel-wrapper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/comeng.jpg" alt="Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/comeng.jpg" alt="Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/comeng.jpg" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <!-- Teks di sebelah kanan -->
+                <div class="carousel-text right-text">
+                </div>
+            </div>
+
+            <!-- Gambar yang ingin ditampilkan di bawah carousel -->
+            <div class="below-carousel">
+                <img src="img/caution.png" alt="Image Left" class="left-image">
+                <img src="img/cata.png" alt="Image Right" class="right-image">
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- About Section End -->
+
+<section class="katalog" style="background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.826)), url('img/marina.jpeg') no-repeat center center/cover;">
+    <svg class="wave-katalog" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(239, 237, 255)" fill-opacity="1" d="M0,0 C180,120 360,280 540,160 C720,40 900,280 1080,160 C1260,40 1440,120 1440,0 L1440,0 Z"></path>
+    </svg>
+    <div class="katalog-content">
+        <img src="img/mong.png" alt="Gambar Produk">
+        <div class="katalog-text">
+            <h2 id="katalog">Catalog</h2>
+            <p>Explore the catalog in Market Meta and discover a complete selection of items to fulfill your Metaverse needs. From essential gear to exclusive digital assets, find everything you need in one place!</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <a href="page1.html" class="katalog-card">
+            <img src="img/tee_icon.jpg" alt="Top" class="katalog-card-image">
+            <h3 class="katalog-card-title">Top</h3>
+        </a>
+        <a href="page2.html" class="katalog-card">
+            <img src="img/pants_icon.jpg" alt="Pants" class="katalog-card-image">
+            <h3 class="katalog-card-title">Pants</h3>
+        </a>
+        <a href="page3.html" class="katalog-card">
+            <img src="img/shoes_icon.jpg" alt="Shoes" class="katalog-card-image">
+            <h3 class="katalog-card-title">Shoes</h3>
+        </a>
+        <a href="page4.html" class="katalog-card">
+            <img src="img/cap_icon.jpg" alt="Cap" class="katalog-card-image">
+            <h3 class="katalog-card-title">Cap</h3>
+        </a>
+        <a href="page5.html" class="katalog-card">
+            <img src="img/acce_icon.jpg" alt="Accessories" class="katalog-card-image">
+            <h3 class="katalog-card-title">Accessories</h3>
+        </a>
+        <a href="page6.html" class="katalog-card">
+            <img src="img/hairu.jpg" alt="Hair" class="katalog-card-image">
+            <h3 class="katalog-card-title">Hair</h3>
+        </a>
+        <a href="page7.html" class="katalog-card">
+            <img src="img/pet_icon.jpg" alt="Pet" class="katalog-card-image">
+            <h3 class="katalog-card-title">Pet</h3>
+        </a>
+    </div>
+</section>
+
+
+
+    <!--  Menu Items End -->
+
+    <!-- Contact Section Start -->
+     <section id="contact" class="contact">
+    <div class="text-content">
+        <h2>News</h2>
+        <p>Stay updated with the latest news and announcements! Follow us on social media for exclusive updates, important information, and community events. Don't miss out—join us today!</p>
+    </div>
+    <div class="card-container">
+        <a href="https://www.instagram.com/your_instagram" target="_blank" class="card">
+            <img src="/img/instagram.jpg" alt="Instagram">
+            <h3>Follow us on Instagram</h3>
+        </a>
+        <a href="https://discord.com/invite/your_discord" target="_blank" class="card">
+            <img src="/img/disscord.jpg" alt="Discord">
+            <h3>Join Community on Discord</h3>
+        </a>
+    </div>
+    <br>
+</section>
+<!-- Contact Section Start-->
+<!-- Bungkus form dalam container -->
+<section class="form-container">
+    <!-- SVG Ombak untuk Memotong Wallpaper -->
+    <svg class="wave-form" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="rgb(239, 237, 255)" fill-opacity="1" d="M0,0 C180,120 360,280 540,160 C720,40 900,280 1080,160 C1260,40 1440,120 1440,0 L1440,0 Z"></path>
+    </svg>
+
+    <div class="form-content">
+        <!-- Tambahkan H2 di sebelah kiri form -->
+        <div class="form-text">
+            <h2>Send Us Your Feedback</h2>
+            
+             <img src="img/rex.png" alt="Send Us Your Feedback">
+        </div>
+
+        <div class="form"> 
+            <form action="">
+                <div class="input-group">
+                    <img src="img/user.jpg" alt="User Icon">
+                    <input type="text" placeholder="Username on Highrise">
+                </div>
+                <div class="input-group">
+                    <img src="img/mailo.jpg" alt="Email Icon">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <img src="img/sending.jpg" alt="Send Icon">
+                    <input type="text" placeholder="Send Message">
+                </div>
+                <button type="submit" class="btn"><b>Send Feedback</b></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="socials">
+            <a href="#">
+                <div class="social-box"><i data-feather="box"></i></div>
+            </a>
+            <a href="#">
+                <div class="social-box"><i data-feather="codepen"></i></div>
+            </a>
+            <a href="#">
+                <div class="social-box"><i data-feather="slack"></i></div>
+            </a>
+            <a href="#">
+                <div class="social-box"><i data-feather="codesandbox"></i></div>
+            </a>
+            <a href="#">
+                <div class="social-box"><i data-feather="twitch"></i></div>
+            </a>
+        </div>
+    </div>
+    <div class="credit">
+        <p>
+            Created by <b>Budi Utomo</b> | &copy; 2025 Market Meta. 
+        </p>
+    </div>
+</footer>
+
+
+    <script>
+        feather.replace(); // Render ikon Feather
+    </script>
+    <!-- Contact Section End-->
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        feather.replace();
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        feather.replace();
+    });
+</script>
+</body>
+</html>
